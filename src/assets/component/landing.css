@@ -98,6 +98,8 @@ letter-spacing: 0.20000000298023224px;
 .desktop-container{
     display:flex;
     margin-top:100px ;
+    align-items: center;
+    justify-content: center;
 }
 .col-md-3 img{
     padding-left: 20px;
@@ -122,4 +124,120 @@ letter-spacing: 0.20000000298023224px;
 }
 .card-item-3{
     margin-left: 14px;
+}
+
+.container-2{
+    width: 100vw;
+    margin-top: 250px;
+}
+.container-2-row{
+    text-align: center;
+}
+.container-2-row h4{
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.20000000298023224px;
+color: #737373;
+
+
+}
+.container-2-row h3{
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+color: #252B42;
+margin-top: 14px;
+
+}
+.container-2-row p{
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+    margin-top: 14px;
+     
+}
+
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 1000px;
+    position: relative;
+    left: 170px;
+    margin-top: 40px;
+}
+.section-images{
+    width: 120px;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+    background: #d8dbe5;
+}
+.product-item{
+    flex: 1 1 calc(20%-16%);
+    max-width: calc(20%-16%);
+    text-align: center;
+}
+.product-grid h5{
+    
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.10000000149011612px;
+text-align: center;
+margin: 14px;
+
+}
+.product-category{
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: center;
+color: #737373;
+
+}
+.product-price{
+font-family: Montserrat;
+font-size: 10px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.10000000149011612px;
+color: #BDBDBD;
+
+}
+.discount-percent{
+    color: #23856D;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin-left:7px;
+
+}
+.view-more-btn{
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    background-color: white;
+    color:#007bff ; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+
 }

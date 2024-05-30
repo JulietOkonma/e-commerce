@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import Landing from './assets/component/landing'
+
+import { useState } from "react";
+import Landing from "./assets/component/landing";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-<Landing />
+    
+        <Landing />
+    
     </>
-  )
+  );
 }
 
-export default App
+export default App;

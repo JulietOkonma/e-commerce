@@ -1,3 +1,8 @@
+import React,{useState} from "react";
+import {useDispatch} from "react-redux"
+import { addCounter } from "./slice";
+
+
 import "./landing.css";
 import telephone from "../images/telephone.png";
 import messagebox from "../images/messagebox.png";
@@ -13,8 +18,35 @@ import colpictures from "../images/col-md-3.png"
 import colpictures1 from "../images/col-md-4.png"
 import carditems from "../images/card-item.png"
 import carditems2 from "../images/card-item-2.png"
+import { useGetPostsQuery } from "../../app/productsApi";
 
 function Landing() {
+    const { data, error, isLoading} = 
+    useGetPostsQuery();
+    const [input,setInput] =useState(' ')
+    const dispatch =useDispatch()
+    const [visibleProducts,setVisibleProducts] = useState(10)
+
+    const additemHandler = (e) =>{
+        e.preventDefault();
+        
+
+        dispatchEvent(addCounter(input))
+        setInput('')
+    }
+
+    const handleViewMore = () => {
+        setVisibleProducts((prev) => prev + 10)
+    };
+
+    if (isLoading) return <div>Loading...</div>;
+    if (error) return <div>Error:
+{error.message}
+    </div>
+
+    
+
+
   return (
     <div className="desktop-shop-header">
       <nav className="nav-bar1">
@@ -98,13 +130,73 @@ function Landing() {
         </main>
 
 
+            
+        <div className="container-2">
+
+          <div className="container-2-row">
+            <h4>Featured Products</h4>
+            <h3>BESTSELLER PRODUCTS</h3>
+            <p>Problems trying to resolve the conflict between </p>
+          </div>
+            
+            <div className="container-2-column">
+            <ul className="product-grid">
+          {data &&
+            data.products &&
+            data.products.slice(0, visibleProducts).map((product) => (
+              <li key={product.id} className="product-item">
+                <img
+                  className="section-images"
+                  src={product.images[0]}
+                  alt={product.title}
+                />
+                <h5>{product.title}</h5>
+                <p className="product-category"> {product.category}</p>
+                <div id="product-amount">
+                  <p id="product-price">${product.price}<span className="discount-percent">{product.discountPercentage}%</span></p>
+                  
+                </div>
+              </li>
+            ))}
+        </ul>
+        
+
+        {data && data.products && visibleProducts < data.products.length && (
+          <button className="view-more-btn" onClick={handleViewMore}>
+            LOAD MORE PRODUCTS
+          </button>
+     
+     )}
+     </div>
+ 
+     </div>
+
+
+
+     <div className="container-3">
+
+     <div className="container-2-row"style={{ marginTop: '250px' }}>
+    
+            <h4>Featured Products</h4>
+            <h3>THE BEST SERVICES</h3>
+            <p>Problems trying to resolve the conflict between </p>
+      </div>
+
+     <div className="container-3-col">
             <div>
-                
+              
             </div>
+            <div></div>
+            <div></div>
+     </div>
+
+
+     </div>
+
+
     </div>
 
 
-
-  );
+  ); 
 }
 export default Landing;
