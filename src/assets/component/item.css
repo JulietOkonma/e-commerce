@@ -1,0 +1,102 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+.desktop-shop-header-2{
+    width: 100vw;
+    height: 100vh;
+
+}
+.nav-bar2{
+    
+        justify-content: space-between;
+        background-color:  #23856D;
+        width:100%;
+        height: 46px;
+        display: flex;
+    
+}
+.contact-info-2{
+    margin-left: 14px;
+}
+.social-media-2{
+    display: flex;
+    align-items: center;
+}
+.social-media-2 img{
+    margin: 8px;
+}
+.contact-info-2 p, .email-info-2 p,.follow-us-2 p, .social-media-2 p{
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.desktop-shop-cards-22{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.desktop-shop-h33{
+    color: #252B42;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    margin-left: 30px;
+
+}
+.desktop-shop-list-2{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 400px ;
+}
+.desktop-shop-list-2 li a{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #252B42;
+    gap: 10px;
+    
+
+}
+.login-2{
+    display: flex;
+    align-items: center;
+    margin-right:40px ;
+    
+}
+.login-2 p{
+    display: flex;
+    align-items: center;
+}
+.login-2 a{
+color: #23A6F0;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+
+
+
+}
+.login-2 img{
+    width:10px;
+    height: 10px;
+    display: flex;
+    margin-left: 10px;
+}
+.login-icon-2{
+    display: flex;
+    align-items: center;
+}
+
