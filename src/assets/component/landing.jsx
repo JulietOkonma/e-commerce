@@ -18,6 +18,25 @@ import colpictures from "../images/col-md-3.png"
 import colpictures1 from "../images/col-md-4.png"
 import carditems from "../images/card-item.png"
 import carditems2 from "../images/card-item-2.png"
+import books from "../images/books.png"
+import arrow from "../images/arrow.png"
+import carbonbooks from "../images/carbon_book.png"
+import designer from "../images/designer.png"
+import icn1 from "../images/icn bx-star1.png"
+import icn2 from "../images/icn bxs-star.png"
+import picture1 from "../images/picture1.png"
+import picture2 from "../images/picture2.png"
+import picture3 from "../images/picture3.png"
+import picture4 from "../images/picture4.png"
+import picturefive from "../images/picturefive.png"
+import picturesix from "../images/picturesix.png"
+import picture7 from "../images/picture7.png"
+import picture8 from "../images/picture8.png"
+import picture9 from "../images/picture9.png"
+import background from "../images/background.png"
+
+
+
 import { useGetPostsQuery } from "../../app/productsApi";
 
 function Landing() {
@@ -74,10 +93,12 @@ function Landing() {
         <div className="social-media">
         <p>
             follow us
+            <ul>
             <img src={instagram}/>
             <img src={youtube}/>
             <img src={facebook}/>
             <img src={twitter}/>
+            </ul>
         </p>
       </div>
       </nav>
@@ -184,17 +205,83 @@ function Landing() {
 
      <div className="container-3-col">
             <div>
-              
+              <img src={books}/>
+              <h3>Easy Wins</h3>
+              <p>Get your best looking smile now!</p>
             </div>
-            <div></div>
-            <div></div>
+
+            <div>
+              <img src={arrow}/>
+              <h3>Concrete</h3>
+              <p>Defalcate is most focused in<br/> helping you discover your most<br/> beautiful smile</p>
+            </div>
+
+            <div>
+              <img src={carbonbooks}/>
+              <h3>Hack Growth</h3>
+              <p>Overcame any hurdle or any<br/> other problem.</p>
+            </div>
      </div>
 
 
      </div>
 
+     <div className="testimonial">
 
-    </div>
+      <div className="testimonial-row">
+
+          <h3>What they say about us</h3>
+          <img src={designer}/>
+          <p>
+            <img src={icn2}/>
+            <img src={icn2}/>
+            <img src={icn2}/>
+            <img src={icn2}/>
+            <img src={icn1}/>
+            </p>
+
+          <p className="text1">Slate helps you see how many more days you need to work to <br/>
+reach your financial goal.</p>
+          <p className="testimonial-Name ">
+          Regina Miles
+          </p>
+      <p className="testimonial-job">Designer</p>
+      
+        </div>
+        <div className="testimonial-column">
+        <img src={picture1}/>
+        <img src={picture2}/>
+        <img src={picture3}/>
+        <img src={picture4}/>
+        <img src={picturefive}/>
+        <img src={picturesix}/>
+        <img src={picture7}/>
+        <img src={picture8}/>
+         <img src={picture9}/>
+
+        </div>
+      
+
+     </div>
+
+     
+
+     <div className="cta">
+            <div className="cta-row">
+      <h6>Designing Better Experience</h6>
+      <h2>Problems trying to resolve<br/> 
+the conflict between </h2>
+     <p>Problems trying to resolve the conflict<br/> between the two major realms of Classical physics: </p>
+     <h5>$16.48</h5>
+     <button>ADD YOUR CALL TO ACTION</button>
+     </div>
+
+     </div>
+
+
+
+</div>
+    
 
 
   ); 

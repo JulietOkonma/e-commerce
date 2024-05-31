@@ -234,10 +234,184 @@ color: #BDBDBD;
     margin: 20px auto; 
     padding: 10px 20px; 
     background-color: white;
-    color:#007bff ; 
-    border: none;
+    border:1px solid #23A6F0 ;
     border-radius: 5px;
     cursor: pointer;
+    border-radius: 10px;
   
 
 }
+.container-3-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    text-align: center;
+    padding: 100px;
+}
+.container-3-col h3{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #252B42;
+
+}
+.container-3-col p{
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #737373;
+    padding: 30px;
+
+}
+.testimonial{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 130px;
+    margin-top: 150px;
+}
+.testimonial-column{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.testimonial-row h3{
+    
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+text-align: center;
+color: #252B42;
+
+
+}
+.testimonial-row img{
+    position: relative;
+    left: 170px;
+    margin-top: 40px
+}
+.text1{
+    color: #737373;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    margin-top: 20px;
+     text-align: center;
+     margin-top: 40px;
+}
+.testimonial-Name{
+    
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    margin-top: 40px;
+    color: #23A6F0;
+
+}
+.testimonial-job{
+     color: #252B42;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+
+}
+.cta{
+    background-image:url("../images/background.png") ;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 640px; ;
+    text-align: center;
+    margin-top: 250px;
+    
+}
+
+.cta h6{
+    
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+color:  #23A6F0;
+
+
+}
+.cta-row{
+    position: relative;
+    top: 200px;
+
+}
+
+.cta h2{
+    
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0.20000000298023224px;
+color: #252B42;
+margin-top: 50px;
+
+}
+.cta p{
+    
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.20000000298023224px;
+color: #737373;
+margin-top: 50px;
+
+}
+.cta h5{
+    
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+color: #23856D;
+margin-top: 50px;
+
+}
+.cta button{
+    width: 292px;
+    height: 52px;
+    background-color: #23A6F0;
+    color: white;
+    
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    margin-top: 50px;
+
+
+
+}
+
+  
+  
