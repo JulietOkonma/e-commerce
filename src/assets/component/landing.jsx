@@ -35,7 +35,15 @@ import picture8 from "../images/picture8.png"
 import picture9 from "../images/picture9.png"
 import background from "../images/background.png"
 import { NavLink } from "react-router-dom";
-
+import iconfacebook from "../images/fa.png"
+import iconinsta from "../images/ins.png"
+import icontwitter from "../images/tw.png"
+import bedstand from "../images/bed with stand.png"
+import darkview from "../images/darkview.png"
+import kitchencounter from "../images/kitchen counter.png"
+import coolicon from "../images/coolicon.png"
+import vectoricon from "../images/vector1.png"
+import iconarrrow from "../images/icon arrrowt.png"
 
 import { useGetPostsQuery } from "../../app/productsApi";
 
@@ -272,6 +280,73 @@ reach your financial goal.</p>
 
      </div>
 
+
+     <div className="new-products">
+     <div className="new-product1">
+       <img src={darkview}/>
+        <div className="new-product1-row">
+          <p className="google">Google</p>
+          <p>Trending</p>
+          <p>New</p>
+        </div>
+        <h4 className="loudest">Loudest à la Madison #1 
+(L'integral)</h4>
+        <p className="focus">We focus on ergonomics and meeting <br/>
+you where you work. It's only a 
+keystroke away.</p>
+<div className="coolicons">
+ <p> <img src={coolicon}/> 22 April 2021</p>
+ <p>  <img src={vectoricon}/>10 comments
+</p>
+</div>
+<p className="learnmore">Learn More <img src={iconarrrow}/></p>
+
+     </div>
+     
+
+
+     <div className="new-product2">
+     <img src={kitchencounter}/>
+        <div className="new-product1-row">
+          <p className="google">Google</p>
+          <p>Trending</p>
+          <p>New</p>
+        </div>
+        <h4 className="loudest">Loudest à la Madison #1 
+(L'integral)</h4>
+        <p className="focus">We focus on ergonomics and meeting <br/>
+you where you work. It's only a 
+keystroke away.</p>
+<div className="coolicons">
+ <p> <img src={coolicon}/> 22 April 2021</p>
+ <p><img src={vectoricon}/>10 comments</p>
+</div>
+<p className="learnmore">Learn More  <img src={iconarrrow}/></p>
+
+</div>
+
+     <div classsName="new-product4"> 
+     <img src={bedstand}/>
+        <div  className="new-product1-row">
+          <p className="google">Google</p>
+          <p>Trending</p>
+          <p>New</p>
+        </div>
+        <h4 className="loudest">Loudest à la Madison #1 
+(L'integral)</h4>
+        <p className="focus">We focus on ergonomics and meeting<br/>
+you where you work. It's only a 
+keystroke away.</p>
+<div className="coolicons">
+ <p> <img src={coolicon}/> 22 April 2021</p>
+ <p><img src={vectoricon}/>10 comments</p>
+</div>
+<p className="learnmore">Learn More  <img src={iconarrrow}/></p>
+
+  </div> 
+
+     </div>
+     
      
 
      <div className="cta">
@@ -287,11 +362,102 @@ the conflict between </h2>
      </div>
 
 
+     <div className="bange-container-1">
+          <div className="bange-row-1">
+            <h3>Badage</h3>
+          </div>
+
+          <div className="bange-icons-1">
+            <img src={iconfacebook} />
+            <img src={iconinsta} />
+            <img src={icontwitter} />
+          </div>
+        </div>
+
+
+        <div className="desktop-footer-1">
+          <div className="desktop-footer-row1">
+            <h5>Company Info</h5>
+            <p>
+              <a href="£">About Us</a>
+            </p>
+            <p>
+              <a href="£">Carrier</a>
+            </p>
+            <p>
+              <a href="£">We are hiring</a>
+            </p>
+            <p>
+              <a href="£">Blog</a>
+            </p>
+          </div>
+
+          <div className="desktop-footer-row2">
+            <h5>Legal</h5>
+            <p>
+              <a href="£">About Us</a>
+            </p>
+            <p>
+              <a href="£">Carrier</a>
+            </p>
+            <p>
+              <a href="£">We are hiring</a>
+            </p>
+            <p>
+              <a href="£">Blog</a>
+            </p>
+          </div>
+          <div className="desktop-footer-row3">
+            <h5>Features</h5>
+            <p>
+              <a href="£">Business Marketing</a>
+            </p>
+            <p>
+              <a href="£">User Analytic</a>
+            </p>
+            <p>
+              <a href="£">Live Chat</a>
+            </p>
+            <p>
+              <a href="£">Unlimited Support</a>
+            </p>
+          </div>
+
+          <div className="desktop-footer-row4">
+            <h5>Resources</h5>
+            <p>
+              <a href="£">IOS & Android</a>
+            </p>
+            <p>
+              <a href="£">Watch a Demo</a>
+            </p>
+            <p>
+              <a href="£">Customers</a>
+            </p>
+            <p>
+              <a href="£">API</a>
+            </p>
+          </div>
+
+          <div className="desktop-footer-row5">
+            <h5>Get In Touch</h5>
+            <form>
+              <input
+              type="email"
+              placeholder="your Email"
+              className="email-btn"/>
+              <button>Subscribe</button>
+            </form>
+            <p>
+              <a href="£">Lore imp sum dolor Amit</a>
+              </p>
+          </div>
+        </div>
+
+
 
 </div>
     
-
-
-  ); 
+    ); 
 }
 export default Landing;

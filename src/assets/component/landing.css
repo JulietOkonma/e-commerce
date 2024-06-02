@@ -333,13 +333,90 @@ color: #252B42;
     text-align: center;
 
 }
+.new-products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 200px;
+
+    
+}
+.new-product1, .new-product2, .new-product4{
+    width:340px ;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px #0000001A;
+    ;
+    
+
+}
+.new-product1-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 100px;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+color: #737373;
+padding-top:20px;
+
+;
+
+
+}
+.google{
+    color: #8EC2F2;
+    ;
+}
+.loudest{
+    
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+color: #252B42;
+margin-top: 20px;
+}
+.focus{
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+color: #737373;
+margin-top: 20px;
+
+}
+
+.coolicons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+.learnmore{
+    margin-top: 20px;
+    
+}
+
+
 .cta{
     background-image:url("../images/background.png") ;
     width: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 640px; ;
+    height: 700px; ;
     text-align: center;
     margin-top: 250px;
     
@@ -412,6 +489,80 @@ margin-top: 50px;
 
 
 }
+.bange-container-1{
+    margin-top: 200px;
+    display: flex;
+    justify-content:space-between ;                                                ;
+}
+.bange-row-1 h3{
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+color: #252B42;
+position: relative;
+left: 100px;
+}
+.bange-icons-1 img{
+
+    position: relative;
+    right: 130px;
+}
+.desktop-footer-1{
+    display: flex;
+    justify-content:space-between ;
+    margin-top:70px ;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+.desktop-footer-row1 p, .desktop-footer-row2 p, .desktop-footer-row3 p, .desktop-footer-row5 p, .desktop-footer-row4 p {
+    padding: 10px;
+}
+
+.desktop-footer-1 h5{
+    
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+color: #252B42;
+
+}
+.desktop-footer-1 p{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+     
+}
+.desktop-footer-1 p a{
+    text-decoration: none;
+    color: #737373;
+
+}
+
+.email-btn{
+    height: 40px;
+    border: 1px solid  #E6E6E6;
+    
+}
+
+.desktop-footer-row5 button{
+    background-color:  #23A6F0;
+    color: white;
+}
+
+
+
+
+
 
   
   
