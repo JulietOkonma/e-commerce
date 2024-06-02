@@ -34,7 +34,7 @@ import picture7 from "../images/picture7.png"
 import picture8 from "../images/picture8.png"
 import picture9 from "../images/picture9.png"
 import background from "../images/background.png"
-
+import { NavLink } from "react-router-dom";
 
 
 import { useGetPostsQuery } from "../../app/productsApi";
@@ -57,6 +57,8 @@ function Landing() {
     const handleViewMore = () => {
         setVisibleProducts((prev) => prev + 10)
     };
+    
+    
 
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error:
@@ -165,22 +167,28 @@ function Landing() {
           {data &&
             data.products &&
             data.products.slice(0, visibleProducts).map((product) => (
-              <li key={product.id} className="product-item">
+              <NavLink to={`/item/${product.id}`}>
+                <li key={product.id} className="product-item">
                 <img
                   className="section-images"
                   src={product.images[0]}
                   alt={product.title}
                 />
                 <h5>{product.title}</h5>
-                <p className="product-category"> {product.category}</p>
+                <p className="product-category">  </p>
                 <div id="product-amount">
                   <p id="product-price">${product.price}<span className="discount-percent">{product.discountPercentage}%</span></p>
                   
                 </div>
               </li>
+              </NavLink>
             ))}
         </ul>
         
+        {/* 
+            item = 1 => /item/product.id
+            item =2 
+        */}
 
         {data && data.products && visibleProducts < data.products.length && (
           <button className="view-more-btn" onClick={handleViewMore}>
