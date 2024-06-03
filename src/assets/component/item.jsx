@@ -19,17 +19,33 @@ import fa6 from "../images/fa-brands-6.png";
 import fa from "../images/fa.png";
 import tw from "../images/tw.png";
 import ins from "../images/ins.png";
+import starss from "../images/icn bx-star1.png"
+import star from "../images/icn bxs-star.png"
+import eclipse1 from "../images/Ellipse 14.png"
+import eclipse2 from "../images/Ellipse 15.png"
+import eclipse3 from "../images/Ellipse 16.png"
+import eclipse4 from "../images/Ellipse 17.png"
+import { selectCartDetails } from "../../app/selector";
+
+import { Link } from "react-router-dom";
+
 
 import { useState, useEffect } from "react";
 import { useGetPostsQuery } from "../../app/productsApi";
 import { useParams } from "react-router-dom";
 import { useRef } from "react";
-
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { addToCart } from "./slice";
 function Item() {
   const { id } = useParams();
   const { data, error, isLoading } = useGetPostsQuery();
   const [product, setProduct] = useState(null);
   const detailsRef = useRef();
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  
+
 
   useEffect(() => {
     console.log("ID:", id);
@@ -46,6 +62,12 @@ function Item() {
       setProduct(product);
     }
   }, [data]);
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart({ id: product.id, text: product.title, image: product.images[0] }));
+   navigate('/AddProduct');
+  };
+
 
   return (
     <div className="desktop-shop-header-2">
@@ -117,7 +139,10 @@ function Item() {
             <span className="login-icon-2">
               {" "}
               <img src={searchss} />
+              
               <img src={cartss} />
+              
+            
               <img src={heartss} />
             </span>
           </div>
@@ -126,13 +151,22 @@ function Item() {
         {product && (
           <div ref={detailsRef}>
             <li className="product-item">
+              <div className="product-div">
+              <div className="section-image-div">
               <img
-                className="section-images"
+                className="section-image-1"
                 src={product.images[0]}
                 alt={product.title}
               />
+              </div>
+              <div className="section-other-div">
               <h5>{product.title}</h5>
-              <p className="product-category"> {product.category}</p>
+              <p className="star-img"><img src={star}/>
+              <img src={star}/>
+              <img src={star}/>
+              <img src={star}/>
+              <img src={starss}/> 10 Reviews
+               </p>
               <div id="product-amount">
                 <p id="product-price">
                   ${product.price}
@@ -140,7 +174,25 @@ function Item() {
                     {product.discountPercentage}%
                   </span>
                 </p>
+                <p className="available">Availability Stock: <span className="in-stock">In Stock</span></p>
+                <div className="ellipse">
+                  <img src={eclipse1}/>
+                  <img src={eclipse2}/>
+                  <img src={eclipse3}/>
+                  <img src={eclipse4}/>
+                </div>
+                <div>
+                  <p>Select Options</p>
+                  
+                </div>
               </div>
+              </div>
+              </div>
+              <div className="handle-button">
+            <button onClick={
+              () => handleAddToCart(product)
+            }>Add to Cart</button></div>
+
             </li>
           </div>
         )}

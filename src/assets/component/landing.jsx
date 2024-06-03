@@ -171,21 +171,21 @@ function Landing() {
           </div>
             
             <div className="container-2-column">
-            <ul className="product-grid">
+            <ul className="product-grid-0">
           {data &&
             data.products &&
             data.products.slice(0, visibleProducts).map((product) => (
               <NavLink to={`/item/${product.id}`}>
-                <li key={product.id} className="product-item">
+                <li key={product.id} className="product-item-0">
                 <img
-                  className="section-images"
+                  className="section-images-0"
                   src={product.images[0]}
                   alt={product.title}
                 />
                 <h5>{product.title}</h5>
-                <p className="product-category">  </p>
-                <div id="product-amount">
-                  <p id="product-price">${product.price}<span className="discount-percent">{product.discountPercentage}%</span></p>
+                <p className="product-category-0">  </p>
+                <div id="product-amount-0">
+                  <p id="product-price-0">${product.price}<span className="discount-percent-0">{product.discountPercentage}%</span></p>
                   
                 </div>
               </li>

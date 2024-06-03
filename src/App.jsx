@@ -1,9 +1,12 @@
 // import { useState } from "react";
 // import Landing from "./assets/component/landing";
 // import Item from "./assets/component/item";
+import AddProduct from './assets/component/AddProduct';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Landing from './assets/component/landing';
 import Item from './assets/component/item';
+// import { Router } from "./Router"
+
 
 const router = createBrowserRouter([
   {
@@ -13,6 +16,10 @@ const router = createBrowserRouter([
   {
       path: "/item/:id",
       element: <Item />,
+  },
+  {
+    path: "/addproduct",
+    element:<AddProduct/>,
   },
 ]);
 
